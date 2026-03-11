@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Important Question ❤️</title>
+
+<style>
+body{
+text-align:center;
+font-family:Arial;
+background:pink;
+}
+
+button{
+padding:15px;
+font-size:18px;
+margin:10px;
+}
+
+#no{
+position:absolute;
+}
+</style>
+
+<script>
+function move(){
+var x=Math.random()*window.innerWidth;
+var y=Math.random()*window.innerHeight;
+
+var btn=document.getElementById("no");
+
+btn.style.left=x+"px";
+btn.style.top=y+"px";
+}
+
+function yes(){
+document.body.innerHTML="<h1>Yay! 🎉 Date confirmed ❤️</h1>";
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Will you go on a date with me? ❤️</h1>
+
+<button onclick="yes()">Yes</button>
+
+<button id="no" onmouseover="move()">No</button>
+
+</body>
+</html>
